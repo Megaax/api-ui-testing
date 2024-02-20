@@ -1,0 +1,37 @@
+version: 2.1
+
+jobs:
+  test:
+    docker:
+      - image: circleci/node:14
+    working_directory: ~/repo
+
+    steps:
+      - checkout
+
+      # Restore dependencies
+      - restore_cache:
+          keys:
+            - v1-dependencies-{{ checksum "package.json" }}
+            - v1-dependencies-
+
+      - run:
+          name: Install dependencies
+          command: npm install
+
+      # Save dependencies for future runs
+      - save_cache:
+          paths:
+            - node_modules
+          key: v1-dependencies-{{ checksum "package.json" }}
+
+      # Run Jest tests
+      - run:
+          name: Run Jest tests
+          command: npm test
+
+workflows:
+  version: 2
+  test_workflow:
+    jobs:
+      - test
