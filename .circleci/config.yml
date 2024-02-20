@@ -7,7 +7,7 @@ jobs:
   ui-test:
     docker:
       - image: cimg/node:16.15.0-browsers
-    working_directory: ~/repo
+    working_directory: ~/repo/UI-test
 
     steps:
       - browser-tools/install-browser-tools
@@ -44,7 +44,7 @@ jobs:
   api-test:
     docker:
       - image: circleci/node:14
-    working_directory: ~/repo
+    working_directory: ~/repo/API-test
 
     steps:
       - checkout
