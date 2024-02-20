@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites errors="0"
+            failures="1"
+            tests="1">
+
+  <testsuite name="basic.ecosia"
+    errors="0" failures="1" hostname="" id="" package="basic" skipped="0"
+    tests="1" time="17.10" timestamp="">
+  
+    <testcase name="Demo test ecosia.org" classname="basic.ecosia" time="7.697" assertions="5">
+
+    
+
+    
+
+    
+
+      <failure message="Testing if element &lt;.layout__content&gt; contains text &#39;Nightwatch.js&#39; in 5000ms - expected &#34;contains text &#39;Nightwatch.js&#39;&#34; but got: &#34;does not contain &#39;Nightwatch.js&#39;&#34; (5481ms)">    at DescribeInstance.&lt;anonymous&gt; (D:\Software-shift\nightwatch\nightwatch\examples\basic\ecosia.js:12:15)</failure>
+
+    
+    </testcase>
+  
+
+  
+
+    
+
+  
+  </testsuite>
+</testsuites>

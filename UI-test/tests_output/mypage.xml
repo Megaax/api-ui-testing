@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites errors="1"
+            failures="0"
+            tests="0">
+
+  <testsuite name="mypage"
+    errors="1" failures="0" hostname="" id="" package="mypage" skipped="9"
+    tests="0" time="0.001000" timestamp="">
+  
+
+  
+    <system-err>
+       An error occurred while creating a new ChromeDriver session: [Error] spawn ./chromedriver ENOENT
+  Verify if ChromeDriver is configured correctly; using:
+  {
+     start_process: true,
+     server_path: &#39;./chromedriver&#39;,
+     port: undefined,
+     host: &#39;localhost&#39;,
+     ssl: false,
+     default_path_prefix: &#39;&#39;,
+     proxy: undefined,
+     cli_args: []
+  }
+
+ 
+  Set webdriver.log_path in your Nightwatch config to retrieve more logs from ChromeDriver.
+    </system-err>
+  
+
+    
+    <error message=""><![CDATA[
+      
+      ]]></error>  
+
+  
+    
+    <testcase
+      name="Search for dress" classname="mypage">
+      <skipped />
+    </testcase>
+    
+    <testcase
+      name="Test valid form submission" classname="mypage">
+      <skipped />
+    </testcase>
+    
+    <testcase
+      name="Test Minimal valid form submission" classname="mypage">
+      <skipped />
+    </testcase>
+    
+    <testcase
+      name="Test invalid form submission - missing email" classname="mypage">
+      <skipped />
+    </testcase>
+    
+    <testcase
+      name="Test invalid form submission - missing message" classname="mypage">
+      <skipped />
+    </testcase>
+    
+    <testcase
+      name="Test invalid form submission - missing subject" classname="mypage">
+      <skipped />
+    </testcase>
+    
+    <testcase
+      name="Test Invalid Form Submission - Missing Email and Message" classname="mypage">
+      <skipped />
+    </testcase>
+    
+    <testcase
+      name="Test Form Submission Without Uploading a File" classname="mypage">
+      <skipped />
+    </testcase>
+    
+    <testcase
+      name="Test Form Submission With Wrong File Extension" classname="mypage">
+      <skipped />
+    </testcase>
+    
+  
+  </testsuite>
+</testsuites>

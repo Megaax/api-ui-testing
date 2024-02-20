@@ -1,0 +1,16 @@
+.DS_Store
+.nyc_output
+.babelrc
+.editorconfig
+.eslintrc.json
+.gitignore
+.nycrc
+.travis.yml
+bin
+components
+config
+node_modules
+scripts
+test
+app.js
+package-lock.json

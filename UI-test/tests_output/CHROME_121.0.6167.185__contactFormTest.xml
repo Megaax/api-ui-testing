@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites errors="0"
+            failures="0"
+            tests="8">
+
+  <testsuite name="contactFormTest"
+    errors="0" failures="0" hostname="" id="" package="contactFormTest" skipped="0"
+    tests="8" time="206.7" timestamp="">
+  
+    <testcase name="Test valid form submission" classname="contactFormTest" time="13.47" assertions="2">
+
+    
+
+    
+    </testcase>
+  
+    <testcase name="Test Minimal valid form submission" classname="contactFormTest" time="13.06" assertions="2">
+
+    
+
+    
+    </testcase>
+  
+    <testcase name="Test invalid form submission - missing email" classname="contactFormTest" time="13.14" assertions="3">
+
+    
+
+    
+
+    
+    </testcase>
+  
+    <testcase name="Test invalid form submission - missing message" classname="contactFormTest" time="12.69" assertions="3">
+
+    
+
+    
+
+    
+    </testcase>
+  
+    <testcase name="Test invalid form submission - missing subject" classname="contactFormTest" time="12.20" assertions="3">
+
+    
+
+    
+
+    
+    </testcase>
+  
+    <testcase name="Test Invalid Form Submission - Missing Email and Message" classname="contactFormTest" time="13.02" assertions="3">
+
+    
+
+    
+
+    
+    </testcase>
+  
+    <testcase name="Test Form Submission Without Uploading a File" classname="contactFormTest" time="12.87" assertions="2">
+
+    
+
+    
+    </testcase>
+  
+    <testcase name="Test Form Submission With Wrong File Extension" classname="contactFormTest" time="12.88" assertions="3">
+
+    
+
+    
+
+    
+    </testcase>
+  
+
+  
+
+    
+
+  
+  </testsuite>
+</testsuites>
