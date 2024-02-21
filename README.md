@@ -54,10 +54,3 @@ Each stage contains jobs that run the tests, and the pipeline ensures that all t
 
 - **Conditional Execution**: The pipeline is configured to execute jobs conditionally, ensuring that each stage runs only if the previous stage completes successfully.
 - **Caching**: The pipeline uses caching mechanisms to reduce build times by reusing dependencies and artifacts.
-
-
-- **License Information**: Include the license information for the project.
-
-## Contact Information
-
-- **Project Maintainer**: Contact details for the project maintainer.
