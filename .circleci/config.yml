@@ -50,7 +50,9 @@ jobs:
 
     steps:
       - checkout
-
+      - run:
+        name: Debug - List files in API-test directory
+        command: ls -l /home/circleci/repo/API-test/
       # Restore dependencies
       - restore_cache:
           keys:
