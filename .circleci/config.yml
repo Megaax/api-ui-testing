@@ -89,7 +89,6 @@
 #           requires:
 #             - api-test
 
-
 version: 2.1
 
 orbs:
@@ -171,15 +170,6 @@ jobs:
           command: |
             cd API-test
             npm run test
-
-workflows:
-  version: 2
-  test_workflow:
-    jobs:
-      - api-test
-      - ui-test:
-          requires:
-            - api-test
 
 workflows:
   version: 2
