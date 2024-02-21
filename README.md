@@ -42,12 +42,13 @@ Each stage contains jobs that run the tests, and the pipeline ensures that all t
 
 - **Prerequisites**: Node.js, npm, and a CircleCI account.
 - **Clone the Repository**: Follow the steps to clone the repository to your local machine.
+- **Navigate inside UI-test Directory **: Run `cd UI-test` Or `cd API-test`.
 - **Install Dependencies**: Run `npm install` to install the necessary dependencies.
 
 ## Running the Tests
 
-- **NightwatchJS Tests**: Execute the NightwatchJS tests using the command provided in the CircleCI configuration.
-- **API Tests**: Run the API tests using the command provided in the CircleCI configuration.
+- **NightwatchJS Tests**: Execute the NightwatchJS tests using the command provided in the CircleCI configuration `npm run test`.
+- **API Tests**: Run the API tests using the command provided in the CircleCI configuration `npm run test`.
 
 ## CircleCI Pipeline Execution
 
