@@ -50,7 +50,7 @@ jobs:
 
     steps:
       - checkout
-      
+
       # Restore dependencies
       - restore_cache:
           keys:
@@ -58,12 +58,9 @@ jobs:
             - v1-dependencies-
 
       - run:
-        name: Debug - List files in API-test directory
-        command: ls 
-
-      - run:
           name: Install dependencies
           command: npm install
+        # working_directory: ~/repo/API-test/
 
       # Save dependencies for future runs
       - save_cache:
