@@ -2,9 +2,9 @@ import supertest from "supertest";
 import app from "../app";
 import { expect } from "chai";
 
-const email = "boo@gmail.com";
+const email = "koo@gmail.com";
 const password = "123";
-const name = "boo";
+const name = "koo";
 
 
 describe("User Registration, Authentication, and Data Retrieval", () => {
