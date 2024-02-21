@@ -88,3 +88,4 @@ workflows:
       - ui-test:
           requires:
             - api-test
+    parallelism: 2
