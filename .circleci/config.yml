@@ -59,7 +59,7 @@ jobs:
 
       - run:
           name: Install dependencies
-          command: npm install-{{ checksum "API-test/package.json" }}
+          command: npm install
         # working_directory: ~/repo/API-test/
 
       # Save dependencies for future runs
