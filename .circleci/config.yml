@@ -59,7 +59,9 @@ jobs:
 
       - run:
           name: Install dependencies
-          command: npm install
+          command: |
+            cd API-test
+            npm install
         # working_directory: ~/repo/API-test/
 
       # Save dependencies for future runs
