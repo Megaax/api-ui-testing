@@ -70,8 +70,8 @@ jobs:
 
       # Run Jest tests
       - run:
-          name: Run Jest tests
-          command: |
+        name: Run Jest tests
+        command: |
           cd API-test
           npm run test
 
