@@ -46,7 +46,7 @@ jobs:
   api-test:
     docker:
       - image: circleci/node:14
-    working_directory: /home/circleci/repo/API-test/
+    working_directory: ~repo/API-test/
 
     steps:
       - checkout
