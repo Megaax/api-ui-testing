@@ -76,7 +76,7 @@ workflows:
   version: 2
   test_workflow:
     jobs:
-      - ui-test
-      - api-test:
+      - api-test
+      - ui-test:
           requires:
-            - ui-test
+            - api-test
