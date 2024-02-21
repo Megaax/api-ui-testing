@@ -70,10 +70,10 @@ jobs:
 
       # Run Jest tests
       - run:
-        name: Run Jest tests
-        command: |
-          cd API-test
-          npm run test
+          name: Run Jest tests
+          command: |
+            cd API-test
+            npm run test
 
 workflows:
   version: 2
