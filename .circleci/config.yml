@@ -59,7 +59,7 @@ jobs:
 
       - run:
         name: Debug - List files in API-test directory
-        command: ls -l /home/circleci/repo/API-test/
+        command: ls 
 
       - run:
           name: Install dependencies
