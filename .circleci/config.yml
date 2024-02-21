@@ -50,14 +50,16 @@ jobs:
 
     steps:
       - checkout
-      - run:
-        name: Debug - List files in API-test directory
-        command: ls -l /home/circleci/repo/API-test/
+      
       # Restore dependencies
       - restore_cache:
           keys:
             - v1-dependencies-{{ checksum "API-test/package.json" }}
             - v1-dependencies-
+
+      - run:
+        name: Debug - List files in API-test directory
+        command: ls -l /home/circleci/repo/API-test/
 
       - run:
           name: Install dependencies
