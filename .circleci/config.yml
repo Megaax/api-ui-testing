@@ -76,7 +76,7 @@ jobs:
       - run:
           name: Run Jest tests
           command: npm run test
-          working_directory: ~/repo/API-test
+          # working_directory: ~/repo/API-test
 
 workflows:
   version: 2
