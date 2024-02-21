@@ -2,63 +2,67 @@
 
 [![Megaax](https://circleci.com/gh/Megaax/api-ui-testing.svg?style=svg)](https://circleci.com/gh/Megaax/api-ui-testing)
 
-# My Store NightwatchJS Tests and Mock-User-Auth API Tests
+# My Store NightwatchJS Tests and Mock-User-Auth API Tests with CircleCI
 
 ## Description
 
-This project contains two main tasks:
+This project demonstrates the implementation of automated tests for the My Store website and API routes using NightwatchJS and `mock-user-auth`, with the entire process orchestrated by a CircleCI pipeline.
 
-1. Automated testing of the My Store website using NightwatchJS.
-2. API testing using `mock-user-auth` and `supertest`.
+## Pipeline Overview
 
-## Task  1: My Store NightwatchJS Tests
+CircleCI pipelines are configured to run two stages, each containing jobs that execute the tests for the corresponding parts of the project.
 
-### Subtask  1.1: Contact Us Page Tests
+### Stage  1: My Store NightwatchJS Tests
 
-- Identifying optional and required fields on the form.
-- Testing form submission with valid and invalid combinations of data.
-- A test case for file upload.
+- **Job**: Automated testing of the My Store website using NightwatchJS.
+- **Tasks**:
+  - Identifying and testing required and optional fields on the Contact Us page.
+  - Testing form submission with valid and invalid combinations of data, including file upload.
+  - Searching for "dress" on the homepage and verifying the search results.
+- **Tools**: NightwatchJS Page Objects for structured and maintainable tests.
 
-### Subtask  1.2: Homepage Search Test
+### Stage  2: Mock-User-Auth API Tests
 
-- Search for the term "dress" on the homepage and verify the search results.
+- **Job**: API testing using `mock-user-auth` and `supertest`.
+- **Tasks**:
+  - Testing all API routes with valid/invalid body data.
+  - Validating routes with valid/invalid authorization.
+- **Tools**: `jest` as the test runner.
 
-### Subtask  1.3: Using Nightwatch Page Objects
+## CircleCI Configuration
 
-- All tests are implemented using Nightwatch Page Objects to avoid hardcoded selectors.
+The CircleCI pipeline is defined in a `.circleci/config.yml` file at the root of the project repository. The pipeline triggers automatically on changes to the repository and consists of two stages:
 
-## Task  2: Mock-User-Auth API Tests
+- **Stage  1**: NightwatchJS tests
+- **Stage  2**: API tests
 
-- Testing all API routes found on the `mock-user-auth` npm page using `supertest`.
-- Validating hitting the routes with valid/invalid body data.
-- Validating hitting the routes with valid/invalid authorization.
-
-### Test Runner
-
-- The project uses `jest` as the test runner.
+Each stage contains jobs that run the tests, and the pipeline ensures that all tests pass before the changes are merged.
 
 ## Setup
 
-- Prerequisites (e.g., Node.js version, npm version, etc.)
-- Steps to clone the repository
-- Steps to install dependencies (`npm install`)
+- **Prerequisites**: Node.js, npm, and a CircleCI account.
+- **Clone the Repository**: Follow the steps to clone the repository to your local machine.
+- **Install Dependencies**: Run `npm install` to install the necessary dependencies.
 
 ## Running the Tests
 
-- Command to run the NightwatchJS tests
-- Command to run the API tests
+- **NightwatchJS Tests**: Execute the NightwatchJS tests using the command provided in the CircleCI configuration.
+- **API Tests**: Run the API tests using the command provided in the CircleCI configuration.
+
+## CircleCI Pipeline Execution
+
+- **Conditional Execution**: The pipeline is configured to execute jobs conditionally, ensuring that each stage runs only if the previous stage completes successfully.
+- **Caching**: The pipeline uses caching mechanisms to reduce build times by reusing dependencies and artifacts.
 
 ## Contribution Guidelines
 
-- How to submit a pull request
-- Code style guidelines
-- Any other contribution rules
+- **Pull Requests**: Follow the standard GitHub pull request process.
+- **Code Style**: Adhere to the project's coding style and guidelines.
 
 ## License
 
-- Include the license for your project.
+- **License Information**: Include the license information for the project.
 
 ## Contact Information
 
-- Provide your contact information for any questions or feedback.
-
+- **Project Maintainer**: Contact details for the project maintainer.
